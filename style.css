@@ -1,116 +1,111 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: rgb(154, 38, 154);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height : 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  background-color: rgb(154, 38, 154);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.container{
-    width: 40vw;
-    border-radius: 2vh;
-    background-color: rgb(235, 235, 34);
-    flex-wrap: wrap;
+.container {
+  width: 40vw;
+  border-radius: 2vh;
+  background-color: rgb(235, 235, 34);
+  flex-wrap: wrap;
 }
-.header{
-    display: flex;
-    margin: 3vh 2vw;
-    justify-content: space-between;
-    font-size: 2.3em;
-    font-weight: 550;
+.header {
+  display: flex;
+  margin: 3vh 2vw;
+  justify-content: space-between;
+  font-size: 2.3em;
+  font-weight: 550;
 }
-.arrow i{
-    line-height: 2.3rem;
-    padding: 4px 10px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: rgba(235, 235, 34, 0.696);
+.arrow i {
+  line-height: 2.3rem;
+  padding: 4px 10px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(235, 235, 34, 0.696);
 }
-.arrow i:hover{
-    background-color: rgb(202, 150, 202);
-    background-color: #e4dadab1;
-
+.arrow i:hover {
+  background-color: #ef9fdbb1;
 }
-.calender{
-    padding: 20px 30px;
+.calender {
+  padding: 20px 30px;
 }
-.calender ul{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+.calender ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }
-.calender ul.weeks{
-    font-weight: 550;
-    margin-bottom: 1vh;
+.calender ul.weeks {
+  font-weight: 550;
+  margin-bottom: 1vh;
 }
-.calender ul li{
-    position: relative;
-    z-index: 1;
-    width: calc(100%/7);
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 3vh;
-    cursor: pointer;
+.calender ul li {
+  position: relative;
+  z-index: 1;
+  width: calc(100% / 7);
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 3vh;
+  cursor: pointer;
 }
-.calender ul li.inactive{
-    color: rgb(95, 93, 93);
+.calender ul li.inactive {
+  color: rgb(95, 93, 93);
 }
-.calender ul.days li::before{
-    z-index: -1;
-    position: absolute;
-    content: "";
-    height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    margin-left: -6px;
-    margin-top: -8px;
+.calender ul.days li::before {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-left: -6px;
+  margin-top: -8px;
 }
-.calender ul.days li:hover:before{
-    background-color: rgba(154, 38, 154, 0.229);
-    background-color: rgb(202, 150, 202);
-    background-color: #e4dadab1;
+.calender ul.days li:hover:before {
+  background-color: #ef9fdbb1;
 }
-.calender ul.days li.active::before{
-    background-color: rgb(165, 43, 165);
-
+.calender ul.days li.active::before {
+  background-color: rgb(165, 43, 165);
 }
-.calender ul.days li.active{
-    color: yellow;
+.calender ul.days li.active {
+  color: yellow;
 }
 @media only screen and (max-width: 1250px) {
-    .container{
-        width: 90vw;
-    }
-    .header{
-        margin: 3vh 4vw ;
-    }
+  .container {
+    width: 90vw;
+  }
+  .header {
+    margin: 3vh 4vw;
+  }
 }
 @media only screen and (max-width: 750px) {
-    .container{
-        width: 90vw;
-    }
-    .header{
-        font-size: 1.2em;
-        margin: 3vh 6vw ;
-    }
-    .arrow i{
-        line-height: 1.2rem;
-    }
-    .calender ul li{
-        font-size: 0.9rem;
-    }
-    .calender ul.days li::before{
-        height: 35px;
-        width: 35px;
-        margin-left: -7.5   px;
-        margin-top: -8px;
-    }
-    .calender{
-        padding: 10px 30px;
-    }
+  .container {
+    width: 90vw;
+  }
+  .header {
+    font-size: 1.2em;
+    margin: 3vh 6vw;
+  }
+  .arrow i {
+    line-height: 1.2rem;
+  }
+  .calender ul li {
+    font-size: 0.9rem;
+  }
+  .calender ul.days li::before {
+    height: 35px;
+    width: 35px;
+    margin-left: -7.5 px;
+    margin-top: -8px;
+  }
+  .calender {
+    padding: 10px 30px;
+  }
 }
